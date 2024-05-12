@@ -29,21 +29,21 @@ namespace Task02
         }
         static void Main(string[] args)
         {
-            var time =new Stopwatch();
+            //var time =new Stopwatch();
             var nonSortedList=CreateList();
 
             ShowList(nonSortedList);
 
             Console.WriteLine("Сортировать список...");
-            Console.ReadLine();
+            //Console.ReadLine();
 
             var sortedList=nonSortedList;
-            time.Start();
+            //time.Start();
             sortedList.Sort();
-            time.Stop();
+            //time.Stop();
             ShowList(sortedList);
 
-            Console.WriteLine($"\n\nВремя сортировки: {time.ElapsedMilliseconds} мс");
+            //Console.WriteLine($"\n\nВремя сортировки: {time.ElapsedMilliseconds} мс");
         }
     }
 }

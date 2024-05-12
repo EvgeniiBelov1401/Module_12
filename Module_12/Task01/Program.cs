@@ -36,23 +36,23 @@ namespace Task01
         }
         static void Main(string[] args)
         {
-            var time = new Stopwatch();
+            //var time = new Stopwatch();
 
             var nonSortedArray=CreateArray();
             
-            time.Start();
+            //time.Start();
             var sortedArray=SortArray(nonSortedArray);
-            time.Stop();
+            //time.Stop();
 
             Console.WriteLine("Сортировать массив...");
-            Console.ReadLine();
+            //Console.ReadLine();
             
             foreach (var item in sortedArray)
             {
                 Console.WriteLine(item);
             }
 
-            Console.WriteLine($"Время сортировки: {time.ElapsedMilliseconds} мс");
+            //Console.WriteLine($"Время сортировки: {time.ElapsedMilliseconds} мс");
         }
     }
 }
